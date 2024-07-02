@@ -1,0 +1,248 @@
+
+/* GENERAL */
+
+*{
+
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  scrollbar-width: auto;
+  scrollbar-color: #1a75a0 #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color:  #3d3d3d;
+}
+
+
+header{
+
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 992px){
+
+  .container {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .console-container{
+    max-width: 85%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 992px){  
+
+  .console-container{
+    text-align: left;
+    padding-left: 20px;
+    max-width: 80%;
+    }
+  .console-container h1{
+  font-size: 50px;
+  }
+  .console-container h2{
+    font-size: 25px;
+    }
+}
+
+.effet {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.2s ease-out;
+  font-weight: 1000;
+}
+
+.effetVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+#home{
+  height: 100vh;
+  width: 100%;
+  display:flex;
+  background-image: url('image/gros-plan-ecran-ordinateur-du-developpeur-logiciels-tapant-script-fonctions-base-donnees-dans-agence-demarrage-concept-affichage-du-programmeur-ecrivant-code-source-defilement-du-texte-du-langage-programmation.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(20%);
+  z-index: 1;
+}
+
+.hidden {
+  opacity:0;
+}
+
+.navbar{
+  box-shadow: 0px 4px 10px #2e2e2e;
+}
+
+.console-container {
+ 
+  font-size: 2.5em;
+  text-align:center;
+  justify-content: center;
+  height:100px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:rgb(187, 187, 187);
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+#page-informations{
+  background-color: #2e3135;
+  padding: 55px 0;
+  box-shadow: inset 0px 0px 8px -6px #000000;
+}
+
+#page-informations .informations-infos h2{
+
+  font-family: 'Roboto', sans-serif;
+  color: #a0a0ac;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  color: #fbfbfb;
+}
+
+#services{
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 500;
+  background-color: rgb(38 40 43);
+  box-shadow: inset 0px 0px 8px -6px #000000;
+}
+
+#page-services{
+  padding-top: 50px;
+}
+
+.card{
+  transition: 0.5s;
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+
+  transform: scale(1.02);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card-columns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-columns{
+  @include media-breakpoint-only(lg: 992px,) {
+    column-count: 3;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+#skills{
+  background-color: #2e3135;
+  box-shadow: inset 0px 0px 8px -6px #000000;
+  }
+
+.resume-section {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+.list-inline {
+  list-style: none;
+}
+
+.list-icons {
+  font-size: 3rem;
+}
+
+.list-inline-item i:hover {
+  color: #5d7581;
+  transition: 0.3s;
+}
+
+.fa-user-tag,
+.blue,
+.list-inline-item i{
+  transition: 0.3s;
+}
+
+#projets {
+  background-color: rgb(38 40 43);
+  box-shadow: inset 0px 0px 8px -6px #000000;
+}
+
+
+#contact{
+  background-color: #2e3135;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 8px -6px #000000;
+}
+
+.form-container {
+  max-width: 600px; /* Largeur maximale du formulaire */
+  margin: 0 auto; /* Centre le formulaire horizontalement */
+  padding: 20px; /* Ajoute du padding autour du formulaire */
+  border: 1px solid #ccc; /* Ajoute une bordure autour du formulaire */
+  border-radius: 10px; /* Arrondit les coins de la bordure */
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1); /* Ajoute une ombre autour du formulaire */
+}
+
+.form-control {
+  font-size: 1rem; /* Ajuste la taille de la police des champs de formulaire */
+  padding: 10px; /* Ajuste le padding des champs de formulaire */
+}
+
+.btn-custom {
+  font-size: 1rem; /* Ajuste la taille de la police du bouton */
+  padding: 50%; /* Ajuste le padding du bouton */
+}
+
+@-webkit-keyframes scroll {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  100% {
+  -webkit-transform: translateX(calc(-250px * 7));
+  transform: translateX(calc(-250px * 7));
+  }
+
+  }
